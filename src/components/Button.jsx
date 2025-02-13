@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars*/
 import React from "react";
+import PropTypes from "prop-types"; // Import PropTypes
 
 const Button = ({ title, id, rightIcon, leftIcon, containerClass }) => {
   return (
@@ -13,6 +15,14 @@ const Button = ({ title, id, rightIcon, leftIcon, containerClass }) => {
       </span>
     </button>
   );
+};
+
+Button.propTypes = {
+  title: PropTypes.string.isRequired, // Ensures title is a required string
+  id: PropTypes.string, // Optional string ID
+  rightIcon: PropTypes.node, // Allows any React node (JSX, icon, etc.)
+  leftIcon: PropTypes.node, // Allows any React node (JSX, icon, etc.)
+  containerClass: PropTypes.string, // Optional string for extra styles
 };
 
 export default Button;
