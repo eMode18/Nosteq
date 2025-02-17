@@ -150,6 +150,8 @@ const Hero = () => {
             className="absolute left-0 top-0 size-full object-cover"
             onLoadedData={handleVideoLoad}
           />
+
+         
         </div>
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
